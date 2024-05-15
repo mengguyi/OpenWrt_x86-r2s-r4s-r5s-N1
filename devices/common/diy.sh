@@ -34,8 +34,8 @@ done
 
 mv -f feeds/kiddin9/r81* tmp/
 
-sed -i "s/192.168.1/10.0.0/" package/feeds/kiddin9/base-files/files/bin/config_generate
-sed -i "s/192.168.1/10.0.0/" package/base-files/files/bin/config_generate
+sed -i "s/192.168.1/192.168.0/" package/feeds/kiddin9/base-files/files/bin/config_generate
+sed -i "s/192.168.1/192.168.0/" package/base-files/files/bin/config_generate
 
 #sed -i "/call Build\/check-size,\$\$(KERNEL_SIZE)/d" include/image.mk
 
