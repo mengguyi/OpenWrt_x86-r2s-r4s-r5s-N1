@@ -9,7 +9,7 @@
 name: Build OpenWrt
 
 on: 
-  push:
+  repository_dispatch:
 
 env:
   REPO_TOKEN: ${{ secrets.TOKEN_KIDDIN9 }}
